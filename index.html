@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rafael Carvalho — Junior Developer & Game Developer</title>
+<meta name="description" content="Portfolio de Rafael Carvalho — Junior Developer & Game Developer baseado em Braga, Portugal." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<div class="cursor-blob" id="cursorBlob"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo">
+      <span class="nav__logo-mark">RC</span>
+      <span class="nav__logo-text">Rafael<span class="dot">.</span>dev</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">Sobre</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#projects" data-i18n="nav.projects">Projetos</a>
+      <a href="#games" data-i18n="nav.games">Downloads</a>
+      <a href="#experience" data-i18n="nav.experience">Experiência</a>
+      <a href="#education" data-i18n="nav.education">Educação</a>
+      <a href="#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-btn active" data-lang="pt" title="Português">PT</button>
+        <button class="lang-btn" data-lang="en" title="English">EN</button>
+        <button class="lang-btn" data-lang="lgp" title="Língua Gestual Portuguesa">
+          <i class="fa-solid fa-hands"></i>
+        </button>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon icon-moon"></i>
+        <i class="fa-solid fa-sun icon-sun"></i>
+      </button>
+
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="hero">
+  <div class="hero__bg">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero__content">
+    <div class="hero__tag">
+      <span class="pulse-dot"></span>
+      <span data-i18n="hero.tag">Disponível para a primeira oportunidade</span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="hero__hello" data-i18n="hero.hello">Olá, eu sou</span>
+      <span class="hero__name">Rafael Carvalho</span>
+      <span class="hero__role">
+        <span class="role-text" data-i18n="hero.role1">Junior Developer</span>
+        <span class="role-sep">|</span>
+        <span class="role-text accent" data-i18n="hero.role2">Game Developer</span>
+      </span>
+    </h1>
+
+    <p class="hero__subtitle" data-i18n="hero.subtitle">
+      Criando experiências interativas com código — de simuladores 3D a platformers retro.
+    </p>
+
+    <div class="hero__cta">
+      <a href="#projects" class="btn btn--primary">
+        <span data-i18n="hero.cta1">Ver o meu trabalho</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a href="#contact" class="btn btn--ghost">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span data-i18n="hero.cta2">Vamos conversar</span>
+      </a>
+    </div>
+
+    <div class="hero__meta">
+      <div class="meta-item"><i class="fa-solid fa-location-dot"></i> Braga, Portugal</div>
+      <div class="meta-item"><i class="fa-brands fa-unity"></i> Unity / C#</div>
+      <div class="meta-item"><i class="fa-solid fa-cube"></i> Blender 3D</div>
+    </div>
+  </div>
+
+  <div class="hero__side">
+    <div class="terminal" aria-hidden="true">
+      <div class="terminal__bar">
+        <span class="dot dot--r"></span>
+        <span class="dot dot--y"></span>
+        <span class="dot dot--g"></span>
+        <span class="terminal__title">~/rafael — zsh</span>
+      </div>
+      <div class="terminal__body">
+        <p><span class="t-prompt">➜</span> <span class="t-path">~/portfolio</span> whoami</p>
+        <p class="t-out">rafael_carvalho</p>
+        <p><span class="t-prompt">➜</span> <span class="t-path">~/portfolio</span> cat skills.json</p>
+        <p class="t-out">{</p>
+        <p class="t-out">&nbsp;&nbsp;"languages": ["C#", "Python", "JS", "SQL"],</p>
+        <p class="t-out">&nbsp;&nbsp;"engines": ["Unity"],</p>
+        <p class="t-out">&nbsp;&nbsp;"creative": ["Blender", "Adobe CC"],</p>
+        <p class="t-out">&nbsp;&nbsp;"passion": "building things"</p>
+        <p class="t-out">}</p>
+        <p><span class="t-prompt">➜</span> <span class="t-path">~/portfolio</span> ./hire.sh<span class="cursor">▌</span></p>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="section__head">
+    <span class="kicker">01 — <span data-i18n="about.kicker">Sobre mim</span></span>
+    <h2 class="section__title" data-i18n="about.title">Construo coisas que se podem jogar.</h2>
+  </div>
+
+  <div class="about">
+    <div class="about__text">
+      <p data-i18n="about.p1">
+        Sou um profissional proativo e criativo com formação técnica em desenvolvimento de software e forte interesse em programação. Crio projetos pessoais inovadores — como um simulador de bilhar 3D em Unity — onde trabalhei lógica, física e interface gráfica.
+      </p>
+      <p data-i18n="about.p2">
+        Aprendo novas tecnologias rapidamente, gosto de trabalhar em equipa e adoro resolver problemas reais. Procuro a minha primeira oportunidade como junior developer para aplicar as minhas competências e crescer através de projetos hands-on.
+      </p>
+    </div>
+
+    <div class="about__highlights">
+      <div class="highlight">
+        <div class="highlight__icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+        <h3 data-i18n="about.h1">Problem Solver</h3>
+        <p data-i18n="about.h1desc">Decompor problemas complexos em soluções elegantes.</p>
+      </div>
+
+      <div class="highlight">
+        <div class="highlight__icon"><i class="fa-solid fa-people-group"></i></div>
+        <h3 data-i18n="about.h2">Team Player</h3>
+        <p data-i18n="about.h2desc">Comunicação clara e colaboração eficaz em equipas.</p>
+      </div>
+
+      <div class="highlight">
+        <div class="highlight__icon"><i class="fa-solid fa-rocket"></i></div>
+        <h3 data-i18n="about.h3">Fast Learner</h3>
+        <p data-i18n="about.h3desc">Aprender stacks novas em dias, não semanas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section section--alt">
+  <div class="section__head">
+    <span class="kicker">02 — <span data-i18n="skills.kicker">Competências</span></span>
+    <h2 class="section__title" data-i18n="skills.title">Stack técnica & criativa.</h2>
+  </div>
+
+  <div class="skills__filters">
+    <button class="filter active" data-filter="all" data-i18n="skills.all">Tudo</button>
+    <button class="filter" data-filter="lang" data-i18n="skills.lang">Linguagens</button>
+    <button class="filter" data-filter="tools" data-i18n="skills.tools">Ferramentas Dev</button>
+    <button class="filter" data-filter="creative" data-i18n="skills.creative">Design & Multimédia</button>
+    <button class="filter" data-filter="soft" data-i18n="skills.soft">Soft Skills</button>
+  </div>
+
+  <div class="skills__grid">
+
+    <!-- LANGUAGES -->
+    <div class="skill-card featured" data-cat="lang">
+      <div class="skill-card__badge">
+        <i class="fa-solid fa-star"></i>
+        <span data-i18n="skills.featured">Em destaque</span>
+      </div>
+
+      <div class="skill-card__icon" style="--c1:#9B4F96;--c2:#68217A">
+        <span class="csharp-mark">C<span>#</span></span>
+      </div>
+
+      <h3>C#</h3>
+      <p data-i18n="skills.csharp">Linguagem principal — Unity, lógica de jogo, OOP avançado</p>
+      <div class="skill-bar"><span style="width:88%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="lang">
+      <div class="skill-card__icon" style="--c1:#FFD43B;--c2:#306998">
+        <i class="fa-brands fa-python"></i>
+      </div>
+
+      <h3>Python</h3>
+      <p data-i18n="skills.python">Scripting, automação e prototipagem rápida</p>
+      <div class="skill-bar"><span style="width:75%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="lang">
+      <div class="skill-card__icon" style="--c1:#F7DF1E;--c2:#E6B800">
+        <i class="fa-brands fa-js"></i>
+      </div>
+
+      <h3>JavaScript</h3>
+      <p data-i18n="skills.js">Front-end interativo e DOM</p>
+      <div class="skill-bar"><span style="width:72%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="lang">
+      <div class="skill-card__icon" style="--c1:#E34F26;--c2:#1572B6">
+        <i class="fa-brands fa-html5"></i>
+      </div>
+
+      <h3>HTML / CSS</h3>
+      <p data-i18n="skills.html">Marcação semântica e layouts modernos</p>
+      <div class="skill-bar"><span style="width:85%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="lang">
+      <div class="skill-card__icon" style="--c1:#00758F;--c2:#F29111">
+        <i class="fa-solid fa-database"></i>
+      </div>
+
+      <h3>SQL</h3>
+      <p data-i18n="skills.sql">Queries, modelagem e gestão MySQL</p>
+      <div class="skill-bar"><span style="width:70%"></span></div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="skill-card featured" data-cat="tools">
+      <div class="skill-card__badge">
+        <i class="fa-solid fa-star"></i>
+        <span data-i18n="skills.featured">Em destaque</span>
+      </div>
+
+      <div class="skill-card__icon" style="--c1:#5C2D91;--c2:#9B4F96">
+        <i class="fa-solid fa-infinity"></i>
+      </div>
+
+      <h3>Visual Studio</h3>
+      <p data-i18n="skills.vs">IDE principal para C# e desenvolvimento Unity</p>
+      <div class="skill-bar"><span style="width:85%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="tools">
+      <div class="skill-card__icon" style="--c1:#007ACC;--c2:#0098FF">
+        <i class="fa-solid fa-code"></i>
+      </div>
+
+      <h3>VS Code</h3>
+      <p data-i18n="skills.vscode">Editor para web, scripts e prototipagem</p>
+      <div class="skill-bar"><span style="width:90%"></span></div>
+    </div>
+
+    <!-- UNITY EM DESTAQUE -->
+    <div class="skill-card featured" data-cat="tools">
+      <div class="skill-card__badge">
+        <i class="fa-solid fa-star"></i>
+        <span data-i18n="skills.featured">Em destaque</span>
+      </div>
+
+      <div class="skill-card__icon" style="--c1:#111827;--c2:#7C3AED">
+        <i class="fa-brands fa-unity"></i>
+      </div>
+
+      <h3>Unity</h3>
+      <p data-i18n="skills.unity">Engine de eleição para jogos 2D e 3D</p>
+      <div class="skill-bar"><span style="width:88%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="tools">
+      <div class="skill-card__icon" style="--c1:#21759B;--c2:#0073AA">
+        <i class="fa-brands fa-wordpress"></i>
+      </div>
+
+      <h3>WordPress</h3>
+      <p data-i18n="skills.wp">Gestão de conteúdo institucional</p>
+      <div class="skill-bar"><span style="width:75%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="tools">
+      <div class="skill-card__icon" style="--c1:#0079BF;--c2:#026AA7">
+        <i class="fa-brands fa-trello"></i>
+      </div>
+
+      <h3>Trello</h3>
+      <p data-i18n="skills.trello">Gestão ágil e Kanban em equipa</p>
+      <div class="skill-bar"><span style="width:80%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="tools">
+      <div class="skill-card__icon" style="--c1:#00758F;--c2:#F29111">
+        <i class="fa-solid fa-server"></i>
+      </div>
+
+      <h3>MySQL</h3>
+      <p data-i18n="skills.mysql">Bases de dados relacionais</p>
+      <div class="skill-bar"><span style="width:70%"></span></div>
+    </div>
+
+    <!-- CREATIVE -->
+    <div class="skill-card" data-cat="creative">
+      <div class="skill-card__icon" style="--c1:#F5792A;--c2:#EA7600">
+        <i class="fa-solid fa-cube"></i>
+      </div>
+
+      <h3>Blender</h3>
+      <p data-i18n="skills.blender">Modelação 3D, texturização e renderização</p>
+      <div class="skill-bar"><span style="width:75%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="creative">
+      <div class="skill-card__icon" style="--c1:#31A8FF;--c2:#0066B3">
+        <i class="fa-solid fa-image"></i>
+      </div>
+
+      <h3>Photoshop</h3>
+      <p data-i18n="skills.ps">Edição de imagem e arte digital</p>
+      <div class="skill-bar"><span style="width:78%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="creative">
+      <div class="skill-card__icon" style="--c1:#FF9A00;--c2:#FFC400">
+        <i class="fa-solid fa-bezier-curve"></i>
+      </div>
+
+      <h3>Illustrator</h3>
+      <p data-i18n="skills.ai">Vetorização e design gráfico</p>
+      <div class="skill-bar"><span style="width:72%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="creative">
+      <div class="skill-card__icon" style="--c1:#FF6BFF;--c2:#FF8CDA">
+        <i class="fa-solid fa-film"></i>
+      </div>
+
+      <h3>Animate</h3>
+      <p data-i18n="skills.animate">Animação 2D e motion graphics</p>
+      <div class="skill-bar"><span style="width:70%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="creative">
+      <div class="skill-card__icon" style="--c1:#9999FF;--c2:#5C5CFF">
+        <i class="fa-solid fa-clapperboard"></i>
+      </div>
+
+      <h3>Premiere</h3>
+      <p data-i18n="skills.premiere">Edição de vídeo profissional</p>
+      <div class="skill-bar"><span style="width:73%"></span></div>
+    </div>
+
+    <div class="skill-card" data-cat="creative">
+      <div class="skill-card__icon" style="--c1:#9999FF;--c2:#D5A0FF">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+      </div>
+
+      <h3>After Effects</h3>
+      <p data-i18n="skills.ae">VFX e composição motion design</p>
+      <div class="skill-bar"><span style="width:68%"></span></div>
+    </div>
+
+    <!-- SOFT SKILLS -->
+    <div class="skill-card soft" data-cat="soft">
+      <div class="skill-card__icon" style="--c1:#06B6D4;--c2:#0EA5E9">
+        <i class="fa-solid fa-lightbulb"></i>
+      </div>
+      <h3 data-i18n="soft.problem">Problem Solving</h3>
+    </div>
+
+    <div class="skill-card soft" data-cat="soft">
+      <div class="skill-card__icon" style="--c1:#10B981;--c2:#06B6D4">
+        <i class="fa-solid fa-handshake"></i>
+      </div>
+      <h3 data-i18n="soft.team">Teamwork</h3>
+    </div>
+
+    <div class="skill-card soft" data-cat="soft">
+      <div class="skill-card__icon" style="--c1:#F59E0B;--c2:#EF4444">
+        <i class="fa-solid fa-palette"></i>
+      </div>
+      <h3 data-i18n="soft.creativity">Creativity</h3>
+    </div>
+
+    <div class="skill-card soft" data-cat="soft">
+      <div class="skill-card__icon" style="--c1:#8B5CF6;--c2:#EC4899">
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+      <h3 data-i18n="soft.fast">Fast Learner</h3>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section">
+  <div class="section__head">
+    <span class="kicker">03 — <span data-i18n="projects.kicker">Projetos</span></span>
+    <h2 class="section__title" data-i18n="projects.title">Coisas que construí.</h2>
+  </div>
+
+  <div class="projects__grid">
+
+    <!-- ATOM GAUNTLET -->
+    <article class="project-card">
+      <div class="project-card__media">
+        <img src="assets/games/atom-gauntlet-protocol.png" alt="Atom Gauntlet: Protocol" loading="lazy"/>
+        <div class="project-card__overlay">
+          <a href="#games" class="overlay-btn">
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="projects.download">Download abaixo</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card__body">
+        <div class="project-card__meta">
+          <span class="tag">3D Action</span>
+          <span class="tag tag--accent">IPCA 2025/2026</span>
+        </div>
+
+        <h3>Atom Gauntlet: Protocol</h3>
+
+        <p data-i18n="projects.atom">
+          Beat'em up 3D de ação com exploração e puzzles. Controlas Polo, um prisioneiro em fuga de uma estação-prisão, usando a Atom Gauntlet para manipular matéria ao nível atómico.
+        </p>
+
+        <div class="tech-row">
+          <span class="tech"><i class="fa-solid fa-hashtag"></i> C#</span>
+          <span class="tech"><i class="fa-brands fa-unity"></i> Unity</span>
+          <span class="tech"><i class="fa-solid fa-hand-fist"></i> Combat</span>
+          <span class="tech"><i class="fa-solid fa-puzzle-piece"></i> Puzzles</span>
+        </div>
+
+        <div class="challenge">
+          <strong data-i18n="projects.challenge">Desafio resolvido:</strong>
+          <span data-i18n="projects.challenge4">
+            Sistema de armas com funções próprias em combate e exploração, limitado por energia.
+          </span>
+        </div>
+      </div>
+    </article>
+
+    <!-- BALL POOL -->
+    <article class="project-card">
+      <div class="project-card__media">
+        <img src="assets/games/ball-pool-raga.png" alt="Ball Pool RaGa" loading="lazy"/>
+        <div class="project-card__overlay">
+          <a href="#games" class="overlay-btn">
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="projects.download">Download abaixo</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card__body">
+        <div class="project-card__meta">
+          <span class="tag">3D Game</span>
+          <span class="tag tag--accent">6 <span data-i18n="projects.months">meses</span></span>
+        </div>
+
+        <h3>Ball Pool RaGa</h3>
+
+        <p data-i18n="projects.ballpool">
+          Simulador de bilhar 3D realista desenvolvido em Unity com integração Firebase e modelos 3D em Blender. Implementa física avançada, interface intuitiva, sistema de pontuação, múltiplos ângulos de câmara e modo multijogador local.
+        </p>
+
+        <div class="tech-row">
+          <span class="tech"><i class="fa-solid fa-hashtag"></i> C#</span>
+          <span class="tech"><i class="fa-brands fa-unity"></i> Unity</span>
+          <span class="tech"><i class="fa-solid fa-fire"></i> Firebase</span>
+          <span class="tech"><i class="fa-solid fa-cube"></i> Blender</span>
+        </div>
+
+        <div class="challenge">
+          <strong data-i18n="projects.challenge">Desafio resolvido:</strong>
+          <span data-i18n="projects.challenge1">Sistema de colisão realista e mecânica de gameplay precisa</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- DOCTOR -->
+    <article class="project-card">
+      <div class="project-card__media">
+        <img src="assets/games/doctor-1348.png" alt="Doctor N.1348" loading="lazy"/>
+        <div class="project-card__overlay">
+          <a href="#games" class="overlay-btn">
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="projects.download">Download abaixo</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card__body">
+        <div class="project-card__meta">
+          <span class="tag">Game Jam</span>
+          <span class="tag tag--accent">1 <span data-i18n="projects.week">semana</span></span>
+        </div>
+
+        <h3>Doctor N.1348</h3>
+
+        <p data-i18n="projects.doctor">
+          Aventura medieval de diagnóstico ambientada na Peste Negra. Identifique sintomas, combine ingredientes e gerencie recursos limitados. Desenvolvido em equipa de 5 numa Game Jam de uma semana.
+        </p>
+
+        <div class="tech-row">
+          <span class="tech"><i class="fa-solid fa-hashtag"></i> C#</span>
+          <span class="tech"><i class="fa-brands fa-unity"></i> Unity</span>
+          <span class="tech"><i class="fa-solid fa-users"></i> Team of 5</span>
+        </div>
+
+        <div class="challenge">
+          <strong data-i18n="projects.achievement">Achievement:</strong>
+          <span data-i18n="projects.achievement1">🏆 Game Jam de 1 semana — entrega completa</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- PLUMBER -->
+    <article class="project-card">
+      <div class="project-card__media">
+        <img src="assets/games/plumbers-path.png" alt="Plumber's Path" loading="lazy"/>
+        <div class="project-card__overlay">
+          <a href="#games" class="overlay-btn">
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="projects.download">Download abaixo</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card__body">
+        <div class="project-card__meta">
+          <span class="tag">2D Platformer</span>
+          <span class="tag tag--accent" data-i18n="projects.uni">Universidade</span>
+        </div>
+
+        <h3>Plumber's Path</h3>
+
+        <p data-i18n="projects.plumber">
+          Platformer 2D vibrante em pixel art. Homenagem moderna aos clássicos 8-bit com power-ups dinâmicos, boss encounters e ambientes ricos em segredos.
+        </p>
+
+        <div class="tech-row">
+          <span class="tech"><i class="fa-solid fa-hashtag"></i> C#</span>
+          <span class="tech"><i class="fa-brands fa-unity"></i> Unity</span>
+          <span class="tech"><i class="fa-solid fa-graduation-cap"></i> Univ.</span>
+        </div>
+
+        <div class="challenge">
+          <strong data-i18n="projects.challenge">Desafio resolvido:</strong>
+          <span data-i18n="projects.challenge3">Controles baseados em momentum + level design</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ GAME DOWNLOADS ============ -->
+<section id="games" class="section section--alt">
+  <div class="section__head">
+    <span class="kicker">04 — <span data-i18n="games.kicker">Downloads</span></span>
+    <h2 class="section__title" data-i18n="games.title">Descarrega os meus jogos.</h2>
+    <p class="section__sub" data-i18n="games.sub">
+      Os jogos estão disponíveis no itch.io. Clica no botão de download para abrir a página oficial.
+    </p>
+  </div>
+
+  <div class="games__download-grid">
+
+    <!-- ATOM GAUNTLET -->
+    <article class="download-card featured">
+      <div class="download-card__media">
+        <img src="assets/games/atom-gauntlet-protocol.png" alt="Atom Gauntlet: Protocol" loading="lazy">
+        <span class="download-card__badge">
+          <i class="fa-solid fa-star"></i>
+          <span data-i18n="games.new">Novo</span>
+        </span>
+      </div>
+
+      <div class="download-card__body">
+        <div class="download-card__top">
+          <div>
+            <span class="kicker mini">3D Action · Beat'em up</span>
+            <h3>Atom Gauntlet: Protocol</h3>
+          </div>
+
+          <span class="status status--live">
+            <span class="dot"></span>
+            itch.io
+          </span>
+        </div>
+
+        <p data-i18n="games.atom.desc">
+          Beat'em up 3D de ação, com exploração e puzzles. Controlas Polo, um prisioneiro em fuga de uma estação-prisão, usando a Atom Gauntlet para manipular matéria ao nível atómico.
+        </p>
+
+        <div class="features-grid compact">
+          <div class="feature">
+            <h4 data-i18n="games.atom.features">Características</h4>
+            <ul>
+              <li data-i18n="games.atom.f1">Quatro alas: Celas, Manutenção, Armaria e Hangar</li>
+              <li data-i18n="games.atom.f2">Armas com funções de combate e exploração</li>
+              <li data-i18n="games.atom.f3">Energia da manopla como recurso estratégico</li>
+              <li data-i18n="games.atom.f4">Confronto final contra Orion</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tech-row">
+          <span class="tech"><i class="fa-solid fa-hashtag"></i> C#</span>
+          <span class="tech"><i class="fa-brands fa-unity"></i> Unity</span>
+          <span class="tech"><i class="fa-solid fa-hand-fist"></i> Combat</span>
+          <span class="tech"><i class="fa-solid fa-puzzle-piece"></i> Puzzles</span>
+        </div>
+
+        <div class="download-card__actions">
+          <a class="btn btn--primary" href="https://rafapincarvalho.itch.io/atom-gauntlet-protocol" target="_blank" rel="noopener">
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="games.download">Download no itch.io</span>
+          </a>
+
+          <a class="btn btn--ghost" href="https://rafapincarvalho.itch.io/atom-gauntlet-protocol" target="_blank" rel="noopener">
+            <i class="fa-brands fa-itch-io"></i>
+            <span data-i18n="games.page">Ver página</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- BALL POOL -->
+    <article class="download-card">
+      <div class="download-card__media">
+        <img src="assets/games/ball-pool-raga.png" alt="Ball Pool RaGa" loading="lazy">
+      </div>
+
+      <div class="download-card__body">
+        <div class="download-card__top">
+          <div>
+            <span class="kicker mini">3D Billiards</span>
+            <h3>Ball Pool RaGa</h3>
+          </div>
+
+          <span class="status status--live">
+            <span class="dot"></span>
+            itch.io
+          </span>
+        </div>
+
+        <p data-i18n="games.ballpool.desc">
+          Simulador de bilhar 3D desenvolvido em Unity com integração Firebase e modelos Blender. Seis meses de desenvolvimento focado em física, UI e multijogador local.
+        </p>
+
+        <div class="tech-row">
+          <span class="tech"><i class="fa-solid fa-hashtag"></i> C#</span>
+          <span class="tech"><i class="fa-brands fa-unity"></i> Unity</span>
+          <span class="tech"><i class="fa-solid fa-fire"></i> Firebase</span>
+          <span class="tech"><i class="fa-solid fa-cube"></i> Blender</span>
+        </div>
+
+        <div class="download-card__actions">
+          <a class="btn btn--primary" href="https://rafapincarvalho.itch.io/ball-pool-raga" target="_blank" rel="noopener">
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="games.download">Download no itch.io</span>
+          </a>
+
+          <a class="btn btn--ghost" href="https://rafapincarvalho.itch.io/ball-pool-raga" target="_blank" rel="noopener">
+            <i class="fa-brands fa-itch-io"></i>
+            <span data-i18n="games.page">Ver página</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- DOCTOR -->
+    <article class="download-card">
+      <div class="download-card__media">
+        <img src="assets/games/doctor-1348.png" alt="Doctor N.1348" loading="lazy">
+      </div>
+
+      <div class="download-card__body">
+        <div class="download-card__top">
+          <div>
+            <span class="kicker mini">Game Jam · Strategy</span>
+            <h3>Doctor N.1348</h3>
+          </div>
+
+          <span class="status status--jam">
+            <i class="fa-solid fa-trophy"></i>
+            Game Jam
+          </span>
+        </div>
+
+        <p data-i18n="games.doctor.desc">
+          Jogo medieval de diagnóstico e tratamento ambientado no século XIV durante a Peste Negra. Identifique sintomas, elabore tratamentos e gerencie recursos.
+        </p>
+
+        <div class="tech-row">
+          <span class="tech"><i class="fa-solid fa-hashtag"></i> C#</span>
+          <span class="tech"><i class="fa-brands fa-unity"></i> Unity</span>
+          <span class="tech"><i class="fa-solid fa-users"></i> Team of 5</span>
+        </div>
+
+        <div class="download-card__actions">
+          <a class="btn btn--primary" href="https://rafapincarvalho.itch.io/doctor-n1348" target="_blank" rel="noopener">
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="games.download">Download no itch.io</span>
+          </a>
+
+          <a class="btn btn--ghost" href="https://rafapincarvalho.itch.io/doctor-n1348" target="_blank" rel="noopener">
+            <i class="fa-brands fa-itch-io"></i>
+            <span data-i18n="games.page">Ver página</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PLUMBER -->
+    <article class="download-card">
+      <div class="download-card__media">
+        <img src="assets/games/plumbers-path.png" alt="Plumber's Path" loading="lazy">
+      </div>
+
+      <div class="download-card__body">
+        <div class="download-card__top">
+          <div>
+            <span class="kicker mini">2D Platformer</span>
+            <h3>Plumber's Path</h3>
+          </div>
+
+          <span class="status status--uni">
+            <i class="fa-solid fa-graduation-cap"></i>
+            Univ.
+          </span>
+        </div>
+
+        <p data-i18n="games.plumber.desc">
+          Platformer 2D vibrante. Uma carta de amor aos side-scrollers 8-bit, com pixel art artesanal e mecânicas modernas baseadas em momentum.
+        </p>
+
+        <div class="tech-row">
+          <span class="tech"><i class="fa-solid fa-hashtag"></i> C#</span>
+          <span class="tech"><i class="fa-brands fa-unity"></i> Unity</span>
+          <span class="tech"><i class="fa-solid fa-gamepad"></i> Platformer</span>
+        </div>
+
+        <div class="download-card__actions">
+          <a class="btn btn--primary" href="https://lil-ebo.itch.io/plumbers-path" target="_blank" rel="noopener">
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="games.download">Download no itch.io</span>
+          </a>
+
+          <a class="btn btn--ghost" href="https://lil-ebo.itch.io/plumbers-path" target="_blank" rel="noopener">
+            <i class="fa-brands fa-itch-io"></i>
+            <span data-i18n="games.page">Ver página</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section">
+  <div class="section__head">
+    <span class="kicker">05 — <span data-i18n="exp.kicker">Experiência</span></span>
+    <h2 class="section__title" data-i18n="exp.title">No mundo profissional.</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline__item">
+      <div class="timeline__dot"></div>
+      <div class="timeline__date">2023 — 2025</div>
+      <div class="timeline__card">
+        <div class="timeline__head">
+          <h3>DattaPrivacy + LDA</h3>
+          <span class="role-pill" data-i18n="exp.intern">Estágio</span>
+        </div>
+        <ul>
+          <li data-i18n="exp.dp1">Redação de Registos de Atividades de Processamento (RATs)</li>
+          <li data-i18n="exp.dp2">Políticas de privacidade, cookies e regulamentos CCTV</li>
+          <li data-i18n="exp.dp3">Gestão de conteúdo institucional via WordPress</li>
+          <li data-i18n="exp.dp4">Trello, Word e Excel para colaboração interna</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline__item">
+      <div class="timeline__dot"></div>
+      <div class="timeline__date">2022 — 2023</div>
+      <div class="timeline__card">
+        <div class="timeline__head">
+          <h3>Cruz Vermelha Portuguesa</h3>
+          <span class="role-pill" data-i18n="exp.it">IT Support</span>
+        </div>
+        <ul>
+          <li data-i18n="exp.cv1">Instalação e manutenção de sistemas operativos</li>
+          <li data-i18n="exp.cv2">Gestão de tickets técnicos e integrações PC/domínio</li>
+          <li data-i18n="exp.cv3">Backup de configurações de routers e melhoria de performance</li>
+          <li data-i18n="exp.cv4">Suporte a infraestrutura crítica em ambiente sensível</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section section--alt">
+  <div class="section__head">
+    <span class="kicker">06 — <span data-i18n="edu.kicker">Educação</span></span>
+    <h2 class="section__title" data-i18n="edu.title">Formação académica.</h2>
+  </div>
+
+  <div class="edu__grid">
+  
+  <div class="edu-card">
+		<div class="edu-card__year">2025 — Presente</div>
+		<h3 data-i18n="edu.games">CTeSP em Design de Jogos Digitais</h3>
+		<p class="edu-card__inst">Instituto Politécnico do Cávado e Ave · IPCA</p>
+		<div class="edu-card__tags">
+		<span class="tag tag--accent" data-i18n="edu.ongoing">Em curso</span>
+		<span class="tag"><i class="fa-brands fa-unity"></i> Unity / C#</span>
+		<span class="tag"><i class="fa-solid fa-gamepad"></i> Game Design</span>
+		</div>
+	</div>
+  
+    <div class="edu-card">
+      <div class="edu-card__year">2023 — 2025</div>
+      <h3 data-i18n="edu.tesp">Curso Técnico Profissional em Data Protection e Segurança de Sistemas de Informação</h3>
+      <p class="edu-card__inst">Instituto Politécnico do Cávado e Ave · Braga</p>
+      <div class="edu-card__tags">
+        <span class="tag" data-i18n="edu.completed">Concluído</span>
+        <span class="tag tag--accent">IKEA · PHC <span data-i18n="edu.talks">talks</span></span>
+      </div>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-card__year">2020 — 2023</div>
+      <h3 data-i18n="edu.voc">Curso Técnico em Gestão e Programação de Sistemas IT</h3>
+      <p class="edu-card__inst">Escola Secundária D. Maria II · Braga</p>
+      <div class="edu-card__tags">
+        <span class="tag tag--gold">
+          <i class="fa-solid fa-trophy"></i>
+          Apps for Good — <span data-i18n="edu.finalist">Finalista Nacional</span> '22
+        </span>
+        <span class="tag">
+          <i class="fa-solid fa-medal"></i>
+          <span data-i18n="edu.honor">Aluno de Honra (3 anos)</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-card__year">2022</div>
+      <h3>Erasmus — Youth 4 Bauhaus</h3>
+      <p class="edu-card__inst">Braga, Portugal · Ghent, Belgium</p>
+      <div class="edu-card__tags">
+        <span class="tag">
+          <i class="fa-solid fa-plane"></i>
+          <span data-i18n="edu.intl">Mobilidade internacional</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section">
+  <div class="section__head">
+    <span class="kicker">07 — <span data-i18n="ct.kicker">Contacto</span></span>
+    <h2 class="section__title" data-i18n="ct.title">Vamos construir algo juntos.</h2>
+    <p class="section__sub" data-i18n="ct.sub">
+      À procura da minha primeira oportunidade como junior developer. Aberto a estágios e posições remotas/hybrid.
+    </p>
+  </div>
+
+  <div class="contact__grid">
+    <div class="contact__info">
+      <a class="contact-item" href="mailto:carvapinto@gmail.com">
+        <span class="contact-item__icon"><i class="fa-solid fa-envelope"></i></span>
+        <span><strong>Email</strong><br>carvapinto@gmail.com</span>
+      </a>
+
+      <a class="contact-item" href="tel:+351913358675">
+        <span class="contact-item__icon"><i class="fa-solid fa-phone"></i></span>
+        <span><strong data-i18n="ct.phone">Telefone</strong><br>+351 913 358 675</span>
+      </a>
+
+      <div class="contact-item">
+        <span class="contact-item__icon"><i class="fa-solid fa-location-dot"></i></span>
+        <span><strong data-i18n="ct.loc">Localização</strong><br>Braga, Portugal</span>
+      </div>
+
+      <div class="socials">
+        <a href="https://www.instagram.com/rafapincarvalho" target="_blank" rel="noopener" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://rafapincarvalho.itch.io" target="_blank" rel="noopener" title="itch.io">
+          <i class="fa-brands fa-itch-io"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rafaelcarvalho2005/" target="_blank" rel="noopener" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="#" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <div class="cv-downloads">
+        <a class="btn btn--ghost btn--sm" href="assets/cv/Rafael_Carvalho_CV_PT.pdf" download>
+          <i class="fa-solid fa-download"></i> CV — PT
+        </a>
+        <a class="btn btn--ghost btn--sm" href="assets/cv/Rafael_Carvalho_CV_EN.pdf" download>
+          <i class="fa-solid fa-download"></i> CV — EN
+        </a>
+      </div>
+    </div>
+
+    <form class="contact__form" id="contactForm" novalidate>
+      <div class="field">
+        <label data-i18n="ct.name">Nome</label>
+        <input type="text" name="name" required>
+        <span class="err" data-i18n="ct.errname">Indica o teu nome</span>
+      </div>
+
+      <div class="field">
+        <label data-i18n="ct.email">Email</label>
+        <input type="email" name="email" required>
+        <span class="err" data-i18n="ct.erremail">Email inválido</span>
+      </div>
+
+      <div class="field">
+        <label data-i18n="ct.subject">Assunto</label>
+        <input type="text" name="subject">
+      </div>
+
+      <div class="field">
+        <label data-i18n="ct.msg">Mensagem</label>
+        <textarea name="message" rows="5" required></textarea>
+        <span class="err" data-i18n="ct.errmsg">Escreve uma mensagem</span>
+      </div>
+
+      <button type="submit" class="btn btn--primary">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span data-i18n="ct.send">Enviar mensagem</span>
+      </button>
+
+      <div class="form-status" id="formStatus"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__col">
+      <div class="nav__logo">
+        <span class="nav__logo-mark">RC</span>
+        <span class="nav__logo-text">Rafael<span class="dot">.</span>dev</span>
+      </div>
+      <p data-i18n="ft.tag">Junior Developer & Game Developer · Braga, Portugal</p>
+    </div>
+
+    <div class="footer__col">
+      <h4 data-i18n="ft.quick">Links Rápidos</h4>
+      <a href="#about" data-i18n="nav.about">Sobre</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#projects" data-i18n="nav.projects">Projetos</a>
+      <a href="#games" data-i18n="nav.games">Downloads</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>CV</h4>
+      <a href="assets/cv/Rafael_Carvalho_CV_PT.pdf" download>
+        <i class="fa-solid fa-file-pdf"></i> Download CV — PT
+      </a>
+      <a href="assets/cv/Rafael_Carvalho_CV_EN.pdf" download>
+        <i class="fa-solid fa-file-pdf"></i> Download CV — EN
+      </a>
+    </div>
+
+    <div class="footer__col">
+      <h4 data-i18n="ft.connect">Conecta</h4>
+      <a href="mailto:carvapinto@gmail.com">
+        <i class="fa-solid fa-envelope"></i> carvapinto@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/rafaelcarvalho2005/" target="_blank" rel="noopener">
+        <i class="fa-brands fa-linkedin-in"></i> linkedin/rafaelcarvalho2005
+      </a>
+      <a href="https://www.instagram.com/rafapincarvalho" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram"></i> @rafapincarvalho
+      </a>
+      <a href="https://rafapincarvalho.itch.io" target="_blank" rel="noopener">
+        <i class="fa-brands fa-itch-io"></i> rafapincarvalho
+      </a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Rafael Carvalho · <span data-i18n="ft.made">Construído com ☕ e C#</span></span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
