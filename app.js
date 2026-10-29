@@ -249,19 +249,16 @@
       }
 
       if (ok) {
+        const subject = fd.get('subject') || (currentLang === 'en' ? 'Contact via portfolio' : 'Contacto via portfólio');
+        const body = fd.get('message') + '\n\n— ' + name + ' (' + email + ')';
+        window.location.href = 'mailto:carvapinto@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
         formStatus.textContent = currentLang === 'en'
-          ? "✓ Message sent! I'll reply soon."
-          : '✓ Mensagem enviada! Respondo em breve.';
+          ? 'Opening your email app… If nothing opens, write to carvapinto@gmail.com.'
+          : 'A abrir a tua app de email… Se não abrir, escreve para carvapinto@gmail.com.';
 
         formStatus.className = 'form-status success';
         formStatus.style.display = 'block';
-
-        form.reset();
-
-        setTimeout(() => {
-          formStatus.style.display = 'none';
-          formStatus.className = 'form-status';
-        }, 6000);
       }
     });
   }

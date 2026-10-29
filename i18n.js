@@ -13,7 +13,7 @@ window.I18N = {
     'nav.contact': 'Contacto',
 
     // HERO
-    'hero.tag': 'Disponível para a primeira oportunidade',
+    'hero.tag': 'Procuro estágio curricular · 840h · fev. 2027',
     'hero.hello': 'Olá, eu sou',
     'hero.role1': 'Junior Developer',
     'hero.role2': 'Game Developer',
@@ -24,8 +24,8 @@ window.I18N = {
     // ABOUT
     'about.kicker': 'Sobre mim',
     'about.title': 'Construo experiências que se podem jogar.',
-    'about.p1': 'Sou um profissional proativo e criativo com formação técnica em desenvolvimento de software e atualmente frequento o CTeSP em Design de Jogos Digitais no IPCA. Crio projetos pessoais e académicos em Unity — como simuladores 3D, jogos de ação e platformers — onde trabalho lógica, física, gameplay e interface gráfica.',
-    'about.p2': 'Aprendo novas tecnologias rapidamente, gosto de trabalhar em equipa e adoro resolver problemas reais. Procuro a minha primeira oportunidade como junior developer para aplicar as minhas competências e crescer através de projetos hands-on.',
+    'about.p1': 'Estudo Design de Jogos Digitais (CTeSP) no IPCA e programo em Unity/C#. Nos meus projetos já trabalhei combate, física, gameplay e interface — de um simulador de bilhar 3D a um jogo de ação em que fiz o cenário, a modelação, a UI e a programação.',
+    'about.p2': 'Procuro um estágio curricular de 840h, a começar em fevereiro de 2027, como programador de jogos, com o objetivo de continuar na equipa. Sou surdo e comunico muito bem por escrito (email, Discord, Slack, Teams, Jira). Prefiro trabalho remoto, mas também posso ir a Braga ou ao Porto.',
     'about.h1': 'Problem Solver',
     'about.h1desc': 'Decompor problemas complexos em soluções elegantes.',
     'about.h2': 'Team Player',
@@ -52,6 +52,7 @@ window.I18N = {
     'skills.unity': 'Engine principal para desenvolvimento de jogos 2D e 3D',
     'skills.wp': 'Gestão de conteúdo institucional',
     'skills.trello': 'Gestão ágil e Kanban em equipa',
+    'skills.git': 'Controlo de versões — a usar nos meus projetos',
     'skills.mysql': 'Bases de dados relacionais',
     'skills.blender': 'Modelação 3D, texturização e renderização',
     'skills.ps': 'Edição de imagem e arte digital',
@@ -77,10 +78,15 @@ window.I18N = {
 
     'projects.atom': "Beat'em up 3D de ação com exploração e puzzles. Controlas Polo, um prisioneiro em fuga de uma estação-prisão, usando a Atom Gauntlet para manipular matéria ao nível atómico.",
     'projects.ballpool': 'Simulador de bilhar 3D realista desenvolvido em Unity com integração Firebase e modelos 3D em Blender. Implementa física avançada, interface intuitiva, sistema de pontuação, múltiplos ângulos de câmara e modo multijogador local.',
-    'projects.doctor': 'Aventura medieval de diagnóstico ambientada na Peste Negra. Identifique sintomas, combine ingredientes e gerencie recursos limitados. Desenvolvido em equipa de 5 numa Game Jam de uma semana.',
+    'projects.doctor': 'Aventura medieval de diagnóstico ambientada na Peste Negra. Identifica sintomas, combina ingredientes e gere recursos limitados. Desenvolvido em equipa de 5 numa Game Jam de uma semana.',
     'projects.plumber': 'Platformer 2D vibrante em pixel art. Homenagem moderna aos clássicos 8-bit com power-ups dinâmicos, boss encounters e ambientes ricos em segredos.',
 
     'projects.challenge': 'Desafio resolvido:',
+    'projects.rolelabel': 'O meu papel:',
+    'projects.role.atom': 'Fiz tudo: cenário, modelação 3D, UI, arte e programação.',
+    'projects.role.ball': 'Programação (lógica, física, pontuação, câmaras, UI).',
+    'projects.role.doctor': 'Programação.',
+    'projects.role.plumber': 'Programação. A arte e o design são de um colega de grupo (o itch.io é dele).',
     'projects.achievement': 'Achievement:',
     'projects.challenge1': 'Sistema de colisão realista e mecânica de gameplay precisa',
     'projects.achievement1': '🏆 Game Jam de 1 semana — entrega completa',
@@ -117,7 +123,7 @@ window.I18N = {
     'games.ballpool.f4': 'Modelos 3D originais feitos em Blender',
 
     // DOCTOR
-    'games.doctor.desc': 'Jogo medieval de diagnóstico e tratamento ambientado no século XIV durante a Peste Negra. Identifique sintomas, elabore tratamentos e gerencie recursos.',
+    'games.doctor.desc': 'Jogo medieval de diagnóstico e tratamento ambientado no século XIV durante a Peste Negra. Identifica sintomas, elabora tratamentos e gere recursos.',
     'games.doctor.m': 'Mecânicas',
     'games.doctor.m1': 'Identificação de sintomas: febre, fadiga e marcas',
     'games.doctor.m2': 'Combinação de ingredientes medievais',
@@ -174,7 +180,7 @@ window.I18N = {
     // CONTACT
     'ct.kicker': 'Contacto',
     'ct.title': 'Vamos construir algo juntos.',
-    'ct.sub': 'À procura da minha primeira oportunidade como junior developer. Aberto a estágios e posições remotas/hybrid.',
+    'ct.sub': 'Procuro estágio curricular de 840h (fev. 2027). Sou surdo — o email é a melhor forma de me contactar.',
     'ct.phone': 'Telefone',
     'ct.loc': 'Localização',
     'ct.name': 'Nome',
@@ -204,7 +210,7 @@ window.I18N = {
     'nav.contact': 'Contact',
 
     // HERO
-    'hero.tag': 'Available for my first opportunity',
+    'hero.tag': 'Seeking curricular internship · 840h · Feb 2027',
     'hero.hello': "Hi, I'm",
     'hero.role1': 'Junior Developer',
     'hero.role2': 'Game Developer',
@@ -215,8 +221,8 @@ window.I18N = {
     // ABOUT
     'about.kicker': 'About me',
     'about.title': 'I build experiences you can play.',
-    'about.p1': "I'm a proactive and creative professional with technical training in software development, currently studying a CTeSP in Digital Game Design at IPCA. I build personal and academic projects in Unity — from 3D simulators to action games and platformers — working on logic, physics, gameplay and UI.",
-    'about.p2': "I learn new technologies quickly, enjoy team work, and thrive on solving real-world problems. I'm looking for my first opportunity as a junior developer to apply my skills and grow through hands-on projects.",
+    'about.p1': "I'm studying Digital Game Design (CTeSP) at IPCA and I program in Unity/C#. In my projects I've worked on combat, physics, gameplay and UI — from a 3D pool simulator to an action game where I did the environment, 3D modelling, UI and programming.",
+    'about.p2': "I'm looking for an 840h curricular internship starting in February 2027 as a game programmer, with the goal of staying on the team. I'm deaf and communicate very well in writing (email, Discord, Slack, Teams, Jira). I prefer remote work, but I can also go to Braga or Porto.",
     'about.h1': 'Problem Solver',
     'about.h1desc': 'Breaking complex problems into elegant solutions.',
     'about.h2': 'Team Player',
@@ -243,6 +249,7 @@ window.I18N = {
     'skills.unity': 'Main engine for 2D and 3D game development',
     'skills.wp': 'Institutional content management',
     'skills.trello': 'Agile management and Kanban in teams',
+    'skills.git': 'Version control — using it in my projects',
     'skills.mysql': 'Relational databases',
     'skills.blender': '3D modeling, texturing and rendering',
     'skills.ps': 'Image editing and digital art',
@@ -272,6 +279,11 @@ window.I18N = {
     'projects.plumber': 'Vibrant 2D platformer in pixel art. A modern tribute to 8-bit classics with dynamic power-ups, boss encounters and secret-rich environments.',
 
     'projects.challenge': 'Solved challenge:',
+    'projects.rolelabel': 'My role:',
+    'projects.role.atom': 'I did it all: environment, 3D modelling, UI, art and programming.',
+    'projects.role.ball': 'Programming (logic, physics, scoring, cameras, UI).',
+    'projects.role.doctor': 'Programming.',
+    'projects.role.plumber': 'Programming. Art and design were done by a teammate (the itch.io page is theirs).',
     'projects.achievement': 'Achievement:',
     'projects.challenge1': 'Realistic collision system and tight gameplay mechanics',
     'projects.achievement1': '🏆 1-week Game Jam — full delivery',
@@ -365,7 +377,7 @@ window.I18N = {
     // CONTACT
     'ct.kicker': 'Contact',
     'ct.title': "Let's build something together.",
-    'ct.sub': "Looking for my first junior developer opportunity. Open to internships and remote/hybrid roles.",
+    'ct.sub': 'Looking for an 840h curricular internship (Feb 2027). I am deaf — email is the best way to reach me.',
     'ct.phone': 'Phone',
     'ct.loc': 'Location',
     'ct.name': 'Name',
